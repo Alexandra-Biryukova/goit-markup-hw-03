@@ -93,12 +93,17 @@ img {
     margin-bottom: 50px;
 }
 
+.navigation-contacs-list {
+    display: flex;
+    align-items: center; 
+    margin-left: auto;
+}
+
 /* ============ END COMPONENTS ============= */
 
 /* =============== HEADER ================= */
 
 .mail {
-    margin-left: auto;
     margin-right: 50px;
 }
 
@@ -335,13 +340,10 @@ padding-bottom: 30px;
 .portfolio-navigation-list {
     display: flex;
     justify-content: center;
-    margin-left: -8px;
-    margin-top: -8px;
 }
 
-.portfolio-navigation-link {
-    margin-left: 8px;
-    margin-top: 8px;
+.portfolio-navigation-link:not(:last-child) {
+    margin-right: 8px;
 }
 
 .button-portfolio:hover,
@@ -375,15 +377,11 @@ padding-bottom: 30px;
 /* ============================= PORTFOLIO CATALOG ====================================== */
 
 .portfolio-list-item {
-    width: 370px;
-    height: 404px;
     background: var(--backgraund-color);
-
     box-sizing: border-box;
-
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
 }
 
 .portfolio-list-text {
@@ -418,6 +416,7 @@ padding-bottom: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
     border: 1px solid #EEEEEE;
 }
 
@@ -427,8 +426,6 @@ padding-bottom: 30px;
 
 .footer-info {
     background-color: var(--dark-backgraund-color);
-    width: 1600px;
-    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
